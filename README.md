@@ -1,66 +1,22 @@
-## Foundry
+# Ethernaut_with_foundry 
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+-------------------------
 
-Foundry consists of:
+Learning with https://github.com/Simon-Busch/Foundry-ethernaut-solutions/tree/main repo 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Documentation
+## Setup 
+---
 
-https://book.getfoundry.sh/
+For each level, the respective factory contract is defined to create and validates the instance of the level to ensure the hack is successful.
+- These must be customized for each level as each level has different setup/hack procedures.
 
-## Usage
+Ethernaut.sol contract is the base contract where all the level instances are stored and to register and create/validate through the respective level's factory contracts.
 
-### Build
+BaseLevel.sol is an abstract contract that defines the interface for creating/validating each level instances. 
 
-```shell
-$ forge build
-```
+## todo 
+---------
 
-### Test
 
-```shell
-$ forge test
-```
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
