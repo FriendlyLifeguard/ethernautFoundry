@@ -1,0 +1,49 @@
+{
+  "transactions": [
+    {
+      "hash": "0x9eb3ce94ca017eeb73797acc2e96a5d6f3cb5999afc8ccae022dcb32123ec992",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x35573be6705ea2ca56cc99c29a46804e1dc56d74",
+      "function": "flip(bool)",
+      "arguments": [
+        "true"
+      ],
+      "transaction": {
+        "from": "0x8b88a3b92433638324e5f429bee52b1fd84e7c5a",
+        "to": "0x35573be6705ea2ca56cc99c29a46804e1dc56d74",
+        "gas": "0x123d1",
+        "value": "0x0",
+        "input": "0x1d263f670000000000000000000000000000000000000000000000000000000000000001",
+        "nonce": "0x87",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [
+    {
+      "status": "0x1",
+      "cumulativeGasUsed": "0x10b8795",
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "transactionHash": "0x9eb3ce94ca017eeb73797acc2e96a5d6f3cb5999afc8ccae022dcb32123ec992",
+      "transactionIndex": "0x43",
+      "blockHash": "0xd4fa630d0901d34c7d85eda6c2aa476890d688dd9f258849bcacb4de71a4d6dd",
+      "blockNumber": "0x61c6dd",
+      "gasUsed": "0x7982",
+      "effectiveGasPrice": "0x1ec93616",
+      "from": "0x8b88a3b92433638324e5f429bee52b1fd84e7c5a",
+      "to": "0x35573be6705ea2ca56cc99c29a46804e1dc56d74",
+      "contractAddress": null
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "returns": {},
+  "timestamp": 1722401236,
+  "chain": 11155111,
+  "commit": "ed86d1d"
+}
