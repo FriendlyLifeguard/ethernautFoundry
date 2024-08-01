@@ -1,27 +1,27 @@
-// // SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: UNLICENSED
 
-// pragma solidity ^0.8.20;
+pragma solidity ^0.8.0;
 
-// import "forge-std/Test.sol";
-// import "../src/Telephone/Telephone.sol";
+import "forge-std/Test.sol";
+import "../src/Telephone/Telephone.sol";
 
-// contract TelephoneTest is Test {
+contract TelephoneTest is Test {
 
-//   address player = address(10);
+  address player = address(10);
   
-//   function setUp() public {
+  function setUp() public {
 
-//     Telephone telephone = new Telephone();
-//     vm.deal(player, 1 ether);
-//   }
+    Telephone telephone = new Telephone();
+    vm.deal(player, 1 ether);
+  }
 
-//   function testTelephoneHack() public {
-//     vm.startPrank(player);
+  function testTelephoneHack() public {
+    vm.startPrank(player);
 
     
     
-//   }
+  }
 
   
 
-// }
+}
