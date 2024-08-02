@@ -3,24 +3,26 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../src/Telephone/Telephone.sol";
+import "../src/Telephone/callTelephone.sol";
 
 contract TelephoneTest is Test {
 
-  address player = address(10);
+  Telephone telephone = new Telephone();
+  callTelephone call = new callTelephone(); 
+  address newOwner; 
   
   function setUp() public {
-
-    Telephone telephone = new Telephone();
-    vm.deal(player, 1 ether);
+    newOwner = address(20);
+    telephone = Telephone(0x2E78367Aa9AF40908FA8BC979Ce6AeF31BC3920b);
   }
 
-  function testTelephoneHack() public {
-    vm.startPrank(player);
+  function testChangeOwner() public {
 
-    
-    
+   vm.prank(newOwner);
+   call.callChangeOwner(newOwner);
+   assertEq(telephone.owner(), newOwner);
   }
+
 
   
 
