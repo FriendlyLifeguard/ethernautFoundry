@@ -3,6 +3,7 @@ src = "src"
 out = "out"
 libs = ["lib"]
 script = "script"
+auto_detect_solc = true
 
 eth_rpc_url = 'https://eth-sepolia.g.alchemy.com/v2/oYArdV2nT5oLCaYrKtvBbLlQml7zUf2x'
 etherscan_api_key = 'FQ1F6I514ZQX17Q4EQNI8C6DSA53HH6JAK'
